@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<title>"My Stuff"</title>
+	<link rel="stylesheet" type="text/css" href="BlackJack MegaGame.css">
+		
+</head>
+
+<body>
+
+	<div class = "container-5">
+		
+		<div class="header">
+			<h1 class="upperHeading">Game : BlackJack Casino Game</h2>
+			<h2 class="lowerHeading"><span id="blackjack-result">Let's Play</span></h3>
+			<!-- we took span here cuz it helps it if we want to make changes later, like initially it will show  Let's Play, later it may show u won or you loss -->
+		</div>
+				
+		<div class="flex-blackjack-row-1">
+
+			<div id="your-box">
+				<h2 style="color:white;background: rgba(0,0,0,0.7);">You : <span id="your-blackjack-result">0</span></h2>
+			</div>
+
+			<div id="dealer-box">
+				<h2 style="color:white;background: rgba(0,0,0,0.7);">Dealer : <span id="dealer-blackjack-result">0</span></h2>
+			</div>
+					
+		</div>
+		
+		<div class="bottomBackground">
+
+			<div class="flex-blackjack-row-2">
+			
+				<div>
+					<button class="Hit" id="blackjack-hit-button">HIT</button>
+					<button class="Stand" id="blackjack-stand-button">STAND</button>
+					<button class="Deal" id="blackjack-deal-button">DEAL</button>
+				</div>
+			
+			</div>
+						
+			<div class="flex-blackjack-row-3">
+				
+				<table class="TableEditor">
+								
+						<tr>
+							<th>Wins</th>
+							<th>Loses</th>
+							<th>Draws</th>
+						</tr>
+					
+						<tr>
+							<td><span id="wins">0</span></td>
+							<td><span id="loses">0</span></td>
+							<td><span id="draws">0</span></td>
+						</tr>
+					
+				</table>
+
+			</div>
+
+		</div>
+
+	</div>
+	
+	<script src="BlackJack MegaGame.js"></script>
+
+</body>
+	
+</html>
